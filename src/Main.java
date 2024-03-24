@@ -56,13 +56,20 @@ public class Main {
                 }
             }
             //Завдання3:
-            int floor=4;
-            String direction="До низу";
-            if (direction=="До низу") {
+            int floor=7;
+            String direction="До гори";
+            if (direction=="До низу"&&floor!=2) {
                 System.out.println("Ви спустились на " + floor + " поверх");
             }
-            else if(direction=="До гори")
-                System.out.println("Ви піднялись на "+floor+" поверх");
+            else if(direction=="До низу"&&floor==2){
+                System.out.println("Ви спустились на 1 поверх");
+            }
+            else if(direction=="До гори" && floor==2) {
+                System.out.println("Ви піднялись на 3 поверх");
+            }
+            else{
+                System.out.println("Ви піднялись на " + floor + " поверх");
+            }
 
         }
 }
